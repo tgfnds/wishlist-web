@@ -1,0 +1,60 @@
+Project (Ordered by priority):
+	Scope:
+		Maybe change the layout to a grid layout, using vertical cards with actions on the bottom.
+		Also the slider could be vertical on the right side of the cards.
+
+	Next steps:
+		✔ Start using zustand for state management. @done(21-05-04 20:07)
+		✔ Add alerts @done(21-05-06 22:30)
+		✔ Add the wish form and states. @done(21-05-11 12:54)
+		☐ Finish new wallet layout.
+		☐ Add edit wallet functionality.
+		✔ Add wallet deposit and withdraw. @done(21-05-17 18:08)
+		☐ Change wallet actions layout?
+		☐ Add environment variables to add the api url there and actually commit all this work. @est(1h)
+		☐ Cleanup wallet form component and state.
+		☐ Better the whole page layout.
+		☐ Create a simple search bar and filtered wishes state.
+		☐ Create a wallet form right below the wallet to edit the amount of a wallet.
+		Use a transition to grow a form right below the wallet with an
+		input and a button. Maybe use small buttons on top of each other to
+		represent put and take directions (green and red arrows) and a save button.
+		☐ Remove float numbers, use only integers @est(1h)
+		This is already applied to some components, might revert these or update the rest.
+
+	
+	Bug:
+		✔ Alerts are positioned absolute, and should be sticky so they don't move when scrolling. @done(21-05-17 18:16)
+		✔ Fix wish slider and wallet amount, find way to make it reliable and dynamic. @done(21-05-09 19:05)
+		☐ Fix error boundary to catch errors like network erros and such.
+		☐ Fix progress bar's border radius.
+		It always has a border on the right, and should only have one if it's maxed.
+		✔ Find a way to set a wallet as active when the app loads. @done(21-05-09 19:05)
+
+	Cleanup:
+		☐ Start using Typographys and Boxs from material to keep UI concise.
+		✔ borderSmall -> make it part of the material theme. @done(21-05-11 18:01)
+
+	Endpoints:
+		// Wallets
+		☐ Add wallet
+		☐ Get wallets
+		☐ Get single wallet
+		☐ Remove wallet
+		☐ Update wallet
+
+		// Wishes
+		☐ Add wish
+		☐ Get wishs
+		☐ Get single wish
+		☐ Remove wish
+		☐ Update wish
+
+		// Transactions/Transfers
+		☐ Wallet deposit
+		☐ Wallet withdraw
+
+		☐ Wish invest
+			Needs to update wallet and wish.
+		☐ Wish retake
+			Needs to update wallet and wish.
